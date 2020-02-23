@@ -20,5 +20,20 @@ int main() {
 
     cout << begin->first << " - " << begin->second << endl;
 
+    vector<vector<char> > board;
+    vector<char> vec;
+    vec.push_back('a');
+    board.push_back(vec);
+    cout << board[0][0] << endl;
+
+    board[0][0] = 'b';
+
+    cout << board[0][0] << endl;
+
+    stack<int> st;
+    st.push(10);
+    cout << "--------- stack -----------" <<endl;
+    cout << st.top() << ", empty = " << st.empty() << endl;
+
     return 0;
 }
